@@ -1,3 +1,9 @@
+commit 5a5a617662a892a28734574f19758469337ff9a6
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Feb 16 10:28:40 2026 +0000
+
+    bumped changelog version
+
 commit 729b1daab93563af0aef315189d85762a648337b
 Merge: 0c9cddf ab338d5
 Author: Patrick Schleizer <adrelanos@whonix.org>
@@ -586,9 +592,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Apr 1 10:12:39 2025 -0400
 
     no longer inject `GNU/Linux` from grub boot menu
-    
+
     due to lack for space for multiple boot modes
-    
+
     https://forums.whonix.org/t/remove-gnu-linux-string-from-boot-grub-menu/8623
 
 commit 4ba41561fc632a1fccd98db32b55efd7129f0df2
@@ -672,9 +678,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Mar 19 06:31:05 2025 -0400
 
     add `/usr/share/derivative-base-files/20_dist-base-files.cfg`
-    
+
     (`/etc/default/grub.d/20_dist-base-files.cfg`)
-    
+
     https://www.kicksecure.com/wiki/Dev/boot#/etc/default/grub.d/20_dist-base-files.cfg
 
 commit 8f3a87c2ee9098956e877e01c84f4dda0848d589
@@ -932,7 +938,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Dec 30 01:35:41 2024 -0500
 
     Pre-Depends: zsh
-    
+
     debian/dist-base-files.postinst uses 'chsh --shell /usr/bin/zsh'.
     chsh requires the shell already available.
 
@@ -953,7 +959,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Dec 16 19:53:51 2024 -0500
 
     no longer adding user `user` to groups `cdrom`, `audio`, `dip`, `plugdev`
-    
+
     as this should be no longer required
 
 commit 937e25d7f9d55ec1a7901018c3230a6999677418
@@ -1077,13 +1083,13 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Jul 31 08:41:17 2024 -0400
 
     only perform the following actions when run by derivative-maker:
-    
+
     - creation of user `user`
     - set empty password (passwordless) for user `user`
     - adding default groups to user `user`
     - enable console-lockdown
     - locking of root account
-    
+
     fix: skip creation of user `user` when using distribution morphing
 
 commit e3a50f306a4456a2daf5b1b0487d088c1daa76cb
@@ -1139,7 +1145,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Jul 28 18:40:45 2024 -0400
 
     user `user` with empty password by default. (passwordless)
-    
+
     This is less confusing then the previously default password `changeme`.
 
 commit 9a6316ba3d7f4c99769cdc65df5e9f7641377c45
@@ -1165,7 +1171,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Apr 13 07:59:42 2024 -0400
 
     symlink `/usr/share/distro-info/derivative.csv` to `/usr/share/distro-info/kicksecure.csv`
-    
+
     https://github.com/QubesOS/qubes-core-agent-linux/pull/481
 
 commit e00ae12d058b21e0ae74bfff5502b8baa9457154
@@ -1173,7 +1179,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Apr 13 07:54:53 2024 -0400
 
     readme
-    
+
     https://github.com/QubesOS/qubes-core-agent-linux/pull/481
 
 commit 3a39d9af620bb7e2d613e196e8ae78be905d49eb
@@ -1181,7 +1187,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Apr 13 07:51:01 2024 -0400
 
     implement `/usr/share/distro-info/kicksecure.csv`
-    
+
     https://github.com/QubesOS/qubes-core-agent-linux/pull/481
 
 commit 13eb5a4cf4b76715b872f24bab63807f7370e041
@@ -1219,7 +1225,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:26 2023 -0500
 
     change license to AGPL-3+
-    
+
     https://forums.whonix.org/t/license-change-to-agplv3/17455
 
 commit 96c88c03a0cd094e5b9353ca25cb7d623d028c40
@@ -1305,7 +1311,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Jul 10 17:31:16 2023 -0400
 
     undo zsh by default for existing builds and Qubes-Whonix
-    
+
     https://forums.whonix.org/t/change-default-shell-from-bash-to-zsh-by-default/14792/130
 
 commit fd3a56b30224d424243ed832fc230e3d645ecec4
@@ -1355,7 +1361,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri Jun 23 08:13:44 2023 +0000
 
     enable zsh by default for new builds
-    
+
     https://forums.whonix.org/t/change-default-shell-from-bash-to-zsh-by-default/14792
 
 commit 306f3cf9f9130ee5a3dd7e70bc619c65a59ee3d7
@@ -1453,7 +1459,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Oct 15 11:53:42 2022 -0400
 
     not set user shell to zsh by default yet due to remaining open issues:
-    
+
     https://forums.whonix.org/t/change-default-shell-from-bash-to-zsh-by-default/14792/41
 
 commit aa1ca72096db8afd2ecdf0471bf36023e137affa
@@ -1479,7 +1485,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri Sep 30 08:42:17 2022 -0400
 
     change default shell from bash to zsh by default
-    
+
     https://forums.whonix.org/t/change-default-shell-from-bash-to-zsh-by-default/14792
 
 commit ca86ba5c4dabec997822ef3697897e118947018e
@@ -1549,7 +1555,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed May 18 09:45:57 2022 -0400
 
     Merge pull request #3 from andrea-varesio/patch-1
-    
+
     Update motd copyright year
 
 commit eee5c45e3a40006b763a0ab5ad0beddc04c723b4
@@ -1557,7 +1563,7 @@ Author: Andrea Varesio <75442907+andrea-varesio@users.noreply.github.com>
 Date:   Fri May 13 12:24:09 2022 +0000
 
     Update motd copyright year
-    
+
     It's still outdated in various other files (both website and packages), but with this fix users will be greeted on the terminal with the correct copyright info.
 
 commit 5f48b06471f72b639f211fa101dc0a2c5c07f9a9
@@ -1751,11 +1757,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jul 11 13:26:55 2020 -0400
 
     remove /etc/hosts /etc/hostname from Kicksecure
-    
+
     and move to whonix-base-files
-    
+
     as this should only be done in Whonix
-    
+
     modification of this file on Kicksecure based servers is bad
 
 commit a82e0d5daca6c4972ecbcf9bb62f24068194d0d6
@@ -1847,7 +1853,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 9 10:13:53 2020 +0000
 
     /etc/update-motd.d
-    
+
     https://phabricator.whonix.org/T975
 
 commit 12e3f9be68c145137607aa5f39c4231b01732a49
@@ -1885,7 +1891,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 17:54:56 2020 +0000
 
     legacy
-    
+
     dpkg-divert --remove --no-rename --package "anon-base-files" "/etc/hosts"
 
 commit 604a432b86545d627b36a0b6e16d4daa277c319c
@@ -1911,7 +1917,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 17:09:17 2020 +0000
 
     Breaks: anon-base-files
-    
+
     dpkg-divert: error: 'diversion of /etc/hosts to /etc/hosts.anondist-orig by dist-base-files' clashes with 'diversion of /etc/hosts to /etc/hosts.anondist-orig by anon-base-files'
 
 commit 6d9f85fc9a77e1b0abc652c5114422f2a0adb381
@@ -2215,7 +2221,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 15 10:06:52 2020 -0500
 
     dsudo default password sudo
-    
+
     https://forums.whonix.org/t/dsudo-default-password-sudo/8766
 
 commit f0b38f9454b071718e1b2012ec1a827b3280869f
@@ -2229,7 +2235,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 13 12:06:01 2019 -0500
 
     Revert "remove string GNU/Linux from grub boot menu entries"
-    
+
     This reverts commit 7949b134329be04702274321c277ef4efb005a50.
 
 commit 7949b134329be04702274321c277ef4efb005a50
@@ -2285,9 +2291,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Dec 8 03:36:55 2019 -0500
 
     add user to group ssh by default
-    
+
     to be able to receive incoming SSH connections even if Console Lockdown is enabled
-    
+
     that also permitted to enable console-lockdown-security-misc by default
 
 commit 7b230bafd89b21ca704a0bd7fb66bc7e94ee0a34
@@ -2301,7 +2307,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Dec 7 07:03:35 2019 -0500
 
     disable console-lockdown
-    
+
     Breaks ssh login for those who install openssh-server.
 
 commit f548b22b320d67ce2daf440c6befa818a4353f8a
@@ -2333,7 +2339,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Oct 22 01:56:58 2019 -0400
 
     simplify sudo default lecture to only show default password
-    
+
     https://forums.whonix.org/t/disable-or-change-sudo-lecture-at-frist-run-we-trust-you-have-received-the-usual-lecture-from-the-local-system-administrator-it-usually-boils-down-to-these-three-things/8323
 
 commit dd0d165002aba7033c7c129278683fcdda983605
@@ -2371,7 +2377,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Aug 30 03:44:55 2019 -0400
 
     port to adduser and addgroup
-    
+
     https://forums.whonix.org/t/port-from-useradd-groupadd-and-usermod-to-adduser-and-addgroup/7977
 
 commit 0f78de8cc69eb39d7155963ebb119b540a570429
@@ -2385,7 +2391,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Aug 24 12:26:24 2019 -0400
 
     skip creation of user "user" for Whonix-Host builds
-    
+
     https://forums.whonix.org/t/whonix-desktop-installer-with-calamares-field-report/7350/124
 
 commit c43d3553624c93214032c459fad038cd916f2ebd
@@ -2429,7 +2435,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Aug 11 14:28:31 2019 +0000
 
     depend on helper scripts
-    
+
     which provides /usr/lib/helper-scripts/first-boot-skel
 
 commit e04601fd52ff8bfd3cb70c69048e2eb16298c4b5
@@ -2437,7 +2443,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Aug 11 14:27:47 2019 +0000
 
     drop dependency of libpam-runtime
-    
+
     (since now handled by security-misc package)
 
 commit 55da858c046e61b01aa62f525e7443c1298c2ef6
@@ -2510,11 +2516,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jul 14 12:39:06 2019 +0000
 
     lock and expire root account in new Whonix builds
-    
+
     https://forums.whonix.org/t/restrict-root-access/7658
-    
+
     https://www.whonix.org/wiki/Dev/Permissions
-    
+
     https://www.whonix.org/wiki/Root
 
 commit 1ef79d24aadd634966f64e6d5385d0b0c2afc834
@@ -2546,10 +2552,10 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jul 14 11:35:52 2019 +0000
 
     do not create home folder during postinst
-    
+
     leave that to:
     pam-auth-update --enable mkhomedir
-    
+
     https://phabricator.whonix.org/T913
 
 commit baa79da1cb9a388641268fe9c94706e3465cf2c1
@@ -2587,7 +2593,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 11 06:52:54 2019 +0000
 
     renamed etc/machine-id.anondist -> etc/machine-id
-    
+
     /etc/machine-id isn't owned by any package.
     (See 'dpkg -S /etc/machine-id'.)
     (And unlikely to change in the future.)
@@ -2607,7 +2613,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 11 06:51:18 2019 +0000
 
     Merge pull request #2 from madaidan/patch-2
-    
+
     Anonymize /etc/machine-id
 
 commit b3e9f05b6f3727676d8592812b20628cbf653311
@@ -2779,7 +2785,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon May 6 05:55:16 2019 -0400
 
     Merge pull request #1 from madaidan/patch-1
-    
+
     Remove user from 'adm' group.
 
 commit d750325392929363a81fcb2c5387d0c93db13592
@@ -2835,9 +2841,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 22 10:01:12 2019 +0000
 
     add mechanism to add variables to Debian packaging maintainance scripts
-    
+
     /etc/package-name_maint.d or /usr/local/etc/package-name_maint.d
-    
+
     /etc/timezone-utc_maint.d or /usr/local/timezone-utc_maint.d
 
 commit ac7fed7c51fbfd548c3ba7e9cda4c29baeda635a
@@ -2851,18 +2857,18 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 1 14:31:47 2019 +0000
 
     add improved legal protections clauses
-    
+
     The license for software created by Whonix is the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version with additional terms applicable per GNU GPL version 3 section 7.
-    
+
     The additional terms are based on the Doom 3 license which is Debian refers to as `GPL-3+-with-id-software-additional-terms`, which is Debian DFSG [1] (The Debian Free Software Guidelines) approved and which is therefore suitable for Debian `main`. Whonix made applied minimal changes to it:
-    
+
     * Rewrite `The Doom 3 BFG Edition GPL Source Code` to the more common `this program` which is used throughout the GPL.
     * Added a "trump clause" [2], in other words, any conflicts or disputes between the additional terms and the GPLv3 shall be resolved in favor of the GPLv3 by adding `Notwithstanding any other provision of this License` (as mentioned in GPL FAQ [3]) at the beginning of the additional terms.
-    
+
     [1] https://www.debian.org/social_contract#guidelines
     [2] https://www.fsf.org/news/canonical-updated-licensing-terms
     [3] https://www.gnu.org/licenses/gpl-faq.html#v3Notwithstanding
-    
+
     For more considerations, see also:
     https://www.whonix.org/wiki/Dev/Licensing
 
@@ -2937,7 +2943,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:48 2017 +0000
 
     remove faketime from Build-Depends:
-    
+
     since no longer used for reproducible builds
 
 commit 6249de343c49d7ad7a8aea899d31d3708cfb8a71
@@ -2993,7 +2999,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 30 21:10:00 2016 +0000
 
     sudo --non-interactive
-    
+
     https://phabricator.whonix.org/T549
 
 commit e764de0ddb87c5adef510b6c40d52276a30fd63d
@@ -3007,7 +3013,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jun 2 11:51:20 2016 +0000
 
     do not use tput if variable TERM is empty
-    
+
     https://phabricator.whonix.org/T505
 
 commit b71b350b602b195ee79e2b7e519142cdd29362bb
@@ -3021,7 +3027,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 15 01:13:40 2016 +0000
 
     more robust handling of /etc/hostname
-    
+
     https://phabricator.whonix.org/T461
 
 commit 1ec8bead322386987e16ec62f5006375d82bc92d
@@ -3047,9 +3053,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 7 00:28:00 2016 +0000
 
     fixed logging version of the package as build version
-    
+
     in case anon_dist_build_version is not set
-    
+
     https://phabricator.whonix.org/T461
 
 commit b70100ea125e3907aa358251f9b375e97ef4392c
@@ -3063,11 +3069,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jan 5 00:14:40 2016 +0000
 
     log build version
-    
+
     So the chroot-script
     https://github.com/Whonix/anon-shared-build-log-build-version/blob/master/usr/lib/anon-dist/chroot-scripts-post.d/70_log_build_version
     can be deprecated.
-    
+
     https://phabricator.whonix.org/T461
 
 commit 0273000b4319d67eff553685fedf5b5b4bfb666c
